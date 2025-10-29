@@ -1,0 +1,38 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { background: #f9f7fc; color: #333; }
+
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 80px; background: transparent;
+}
+.logo { font-size: 24px; font-weight: 600; color: #5b2be0; }
+.back-home { color: #5b2be0; text-decoration: none; font-weight: 500; }
+
+.login-container {
+  max-width: 400px; margin: 80px auto; background: #fff;
+  padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.login-container h2 { color: #5b2be0; margin-bottom: 10px; }
+.login-container p { color: #666; margin-bottom: 20px; }
+
+.login-container input {
+  width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc;
+  border-radius: 8px; font-size: 16px;
+}
+
+.role-buttons {
+  display: flex; gap: 10px; justify-content: center; margin-top: 10px;
+}
+.login-btn {
+  background: #5b2be0; color: #fff; border: none;
+  padding: 10px 15px; border-radius: 8px; cursor: pointer;
+  flex: 1; transition: 0.2s ease;
+}
+.login-btn:hover { background: #4520b7; }
+
+.login-btn.admin { background: #2d2d2d; }
+.login-btn.admin:hover { background: #000; }
+
+.forgot-link { display: block; margin-top: 15px; color: #5b2be0; text-decoration: none; }
+.forgot-link:hover { text-decoration: underline; }

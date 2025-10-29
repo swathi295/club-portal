@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Event | Fynd Admin</title>
+  <link rel="stylesheet" href="admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="navbar">
+  <div class="logo">fynd admin</div>
+  <nav class="nav-links">
+    <a href="index.html">Dashboard</a>
+    <a href="#">Manage Users</a>
+    <a href="addevent.html" class="active">Add Event</a>
+    <a href="#">Reports</a>
+    <a href="../loginpage/index.html" class="logout-btn">Logout</a>
+  </nav>
+  <div class="menu-toggle" id="mobile-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+  <section class="add-event-container">
+    <h1>Add New Event</h1>
+    <p>Fill in the details of your event below</p>
+
+    <form id="addEventForm">
+      <input type="text" id="eventTitle" placeholder="Event Title" required />
+      <input type="date" id="eventDate" required />
+      <textarea id="eventDesc" placeholder="Event Description" rows="5" required></textarea>
+      <input type="file" id="eventImage" accept="image/*" />
+      <button type="submit">Post Event</button>
+    </form>
+  </section>
+
+  <script src="addevent.js"></script>
+</body>
+</html>

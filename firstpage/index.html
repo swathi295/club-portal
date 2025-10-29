@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clubz – College Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">clubz</div>
+    <button class="login-btn">Login</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Clubs and Socity Portal<br><span>Rajalakshmi engineering college</span></h1>
+      <button class="get-started">Get Started</button>
+    </div>
+    <img src="image.png" alt="Students Illustration" class="hero-img" />
+  </section>
+
+  <section class="popular">
+    <h2>Popular Organizations</h2>
+    <div class="org-cards">
+      <div class="card"><img src="rotract.jpg" alt="club"><p>ROTRACT</p></div>
+      <div class="card"><img src="yuva.jpg" alt="Club"><p>YUVA</p></div>
+      <div class="card"><img src="gdg.jpg" alt="Club"><p>GDG</p></div>
+      <div class="card"><img src="ieeecs.jpg" alt="Club"><p>IEEE CSI</p></div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="info-block">
+      <img src="assets/friends.svg" alt="">
+      <div>
+        <h3>Keep Up To Date With Your Favorite Organizations</h3>
+        <p>Chat with your club members and show your interest by reacting to posts.</p>
+        <button>Join</button>
+      </div>
+    </div>
+    <div class="info-block">
+      <img src="assets/community.svg" alt="">
+      <div>
+        <h3>Your Community</h3>
+        <p>Explore using streamlined search tools. Browse interests-based recommendations.</p>
+        <button>Explore</button>
+      </div>
+    </div>
+    <div class="info-block">
+      <img src="assets/register.svg" alt="">
+      <div>
+        <h3>Register Your Organization</h3>
+        <p>Create and manage club events. Invite members and drive interest.</p>
+        <button>Register</button>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <footer>
+    <div class="footer-container">
+      <h3>Clubz</h3>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Privacy Policy</a> 
+      </div>
+      <p>© 2025 REC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+
+    <!-- GenAI Chatbot UI -->
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-toggle" style="position:fixed;bottom:20px;right:20px;width:60px;height:60px;border-radius:50%;background:#0078d4;color:#fff;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.2);z-index:1001;font-size:2em;cursor:pointer;">💬</button>
+
+    <!-- GenAI Chatbot UI (hidden by default) -->
+    <div id="chatbot-container" style="display:none;position:fixed;bottom:90px;right:20px;width:450px;background:#fff;border-radius:14px;box-shadow:0 4px 16px rgba(0,0,0,0.25);padding:24px;z-index:1000;">
+      <h3 style="margin-top:0;">Clubz Chatbot</h3>
+      <div id="chatbot-messages" style="height:320px;overflow-y:auto;border:1px solid #eee;padding:12px;margin-bottom:12px;background:#fafafa;font-size:1.1em;"></div>
+      <form id="chatbot-form" style="display:flex;gap:12px;">
+        <input type="text" id="chatbot-input" placeholder="Type your message..." style="flex:1;padding:10px;border-radius:6px;border:1px solid #ccc;font-size:1.1em;">
+        <button type="submit" style="padding:10px 20px;border-radius:6px;background:#0078d4;color:#fff;border:none;font-size:1.1em;">Send</button>
+      </form>
+    </div>
+</body>
+</html>

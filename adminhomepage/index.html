@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | Clubz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<script src="script.js"></script>
+<script src="chatbot.js"></script>
+<body>
+  <!-- Chatbot Toggle Button -->
+  <button id="chatbot-toggle" style="position:fixed;bottom:20px;right:20px;width:60px;height:60px;border-radius:50%;background:#0078d4;color:#fff;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.2);z-index:1001;font-size:2em;cursor:pointer;">💬</button>
+
+  <!-- GenAI Chatbot UI (hidden by default) -->
+  <div id="chatbot-container" style="display:none;position:fixed;bottom:90px;right:20px;width:450px;background:#fff;border-radius:14px;box-shadow:0 4px 16px rgba(0,0,0,0.25);padding:24px;z-index:1000;">
+    <h3 style="margin-top:0;">Clubz Chatbot</h3>
+    <div id="chatbot-messages" style="height:320px;overflow-y:auto;border:1px solid #eee;padding:12px;margin-bottom:12px;background:#fafafa;font-size:1.1em;"></div>
+    <form id="chatbot-form" style="display:flex;gap:12px;">
+      <input type="text" id="chatbot-input" placeholder="Type your message..." style="flex:1;padding:10px;border-radius:6px;border:1px solid #ccc;font-size:1.1em;">
+      <button type="submit" style="padding:10px 20px;border-radius:6px;background:#0078d4;color:#fff;border:none;font-size:1.1em;">Send</button>
+    </form>
+  </div>
+  <header class="navbar">
+    <div class="logo">Clubz admin</div>
+    <nav>
+      <a href="#" class="active">Dashboard</a>
+      <a href="#">Manage Users</a>
+      <a href="#">Add Events</a>
+      <a href="#">Reports</a>
+      <a href="../login/index.html" class="logout-btn">Logout</a>
+    </nav>
+  </header>
+
+  <section class="welcome-section">
+    <h1>Welcome, Admin 👑</h1>
+    <p>Manage events, users, and club activities efficiently.</p>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>Manage Students</h3>
+      <p>View, add, or remove student accounts.</p>
+      <button>Open Panel</button>
+    </div>
+    <div class="card">
+        <h3>Create Event</h3>
+        <p>Organize new college or club events.</p>
+        <button id="addEventBtn">Create</button>
+    </div>
+    <div class="card">
+      <h3>View Reports</h3>
+      <p>Analyze participation and performance data.</p>
+      <button>View Reports</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Clubz | Admin Portal</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Clubz</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Clubz</div>
+    <a href="../firstpage/index.html" class="back-home">← Back</a>
+  </header>
+
+  <section class="login-container">
+    <h2>Welcome Back</h2>
+    <p>Login to your account</p>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      
+      <!-- One login box with two role buttons -->
+      <div class="role-buttons">
+        <button type="button" id="studentLogin" class="login-btn">Login as Student</button>
+        <button type="button" id="adminLogin" class="login-btn admin">Login as Admin</button>
+      </div>
+
+      <a href="../forgotpassword/index.html" class="forgot-link">Forgot Password?</a>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
